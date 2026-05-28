@@ -1,12 +1,12 @@
-# AI Learning Labs 🤖
+# AI Learning Labs 
 
 A modern, responsive web project built as a placement task, featuring a hero section with an interactive Swiper.js carousel.
 
-## 🚀 Live Demo
+## Live Demo
 
 > Deploy your project and add the link here.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 placementtask/
@@ -15,14 +15,14 @@ placementtask/
 └── script.js       # JavaScript logic
 ```
 
-## ✨ Features
+## Features
 
 - Hero section with smooth Swiper.js slider
 - Responsive layout for all screen sizes
 - Clean UI with Poppins (Google Fonts)
 - Lightweight — pure HTML, CSS & JS (no frameworks)
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -32,7 +32,7 @@ placementtask/
 | [Swiper.js v11](https://swiperjs.com/) | Hero carousel/slider |
 | [Google Fonts – Poppins](https://fonts.google.com/specimen/Poppins) | Typography |
 
-## ⚙️ Getting Started
+##  Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -47,21 +47,20 @@ placementtask/
    ```
    Or use the **Live Server** extension in VS Code for hot reload.
 
-## 📦 Dependencies
+##  Dependencies
 
 All dependencies are loaded via CDN — no installation required.
 
 - Swiper CSS & JS via jsDelivr
 - Poppins font via Google Fonts
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ by [Sneha Thaku](https://github.com/Snehathaku)
