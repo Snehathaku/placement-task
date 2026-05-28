@@ -1,0 +1,343 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f3f3f3;
+  overflow-x:hidden;
+}
+
+/* VARIABLES */
+
+:root{
+  --bg:#f3f3f3;
+  --blue:#0d3b66;
+  --light-blue:#35a8ff;
+  --green:#62b255;
+  --white:#ffffff;
+  --black:#000000;
+  --pink:#ff39d4;
+}
+
+/* MAIN WRAPPER */
+
+.main-wrapper{
+  width:100%;
+  min-height:100vh;
+  background:var(--bg);
+}
+
+/*HERO SECTION*/
+
+.hero{
+  width:100%;
+  margin-bottom:18px;
+}
+
+.heroSwiper{
+  width:100%;
+}
+
+.hero-slide{
+  overflow:hidden;
+}
+
+/*HERO IMAGE*/
+
+.hero-image{
+  width:100%;
+  height:520px;
+
+  background:
+  linear-gradient(
+    135deg,
+    var(--light-blue),
+    #0077b6
+  );
+}
+
+/*HERO CONTENT*/
+
+.hero-content{
+  background:var(--blue);
+  padding:28px 20px;
+  color:white;
+}
+
+/* SMALL LABEL */
+
+.small-text{
+  font-size:12px;
+  font-weight:600;
+  margin-bottom:14px;
+  letter-spacing:0.4px;
+  opacity:0.9;
+}
+
+/* HERO HEADING */
+
+.hero-content h2{
+  font-size:64px;
+  font-weight:400;
+  line-height:1.1;
+  margin-bottom:18px;
+}
+
+/* HERO DESCRIPTION */
+
+.hero-description{
+  max-width:620px;
+  font-size:14px;
+  line-height:1.6;
+  margin-bottom:28px;
+  opacity:0.95;
+}
+
+/* HERO BUTTONS */
+.hero-buttons{
+  display:flex;
+  gap:12px;
+}
+
+.btn-primary,
+.btn-secondary{
+  height:48px;
+  padding:0 24px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:0;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.btn-primary{
+  background:white;
+  color:black;
+  border:none;
+}
+
+.btn-secondary{
+  background:transparent;
+  color:white;
+  border:1px solid rgba(255,255,255,0.6);
+}
+
+/* SIMPLE HOVER */
+
+.btn-primary:hover{
+  opacity:0.9;
+}
+
+.btn-secondary:hover{
+  background:white;
+  color:black;
+}
+
+/* SWIPER */
+
+.swiper-button-next,
+.swiper-button-prev{
+  color:white;
+  font-weight:bold;
+}
+
+.swiper-pagination-bullet{
+  background:white;
+  opacity:0.5;
+}
+
+.swiper-pagination-bullet-active{
+  opacity:1;
+}
+/* PRODUCTS SECTION */
+.products{
+  width:100%;
+  padding:0 18px 30px;
+}
+
+/* SECTION TITLE */
+.section-title{
+  background:white;
+  color:black;
+  text-align:center;
+  padding:12px;
+  font-size:28px;
+  font-weight:500;
+  margin-bottom:35px;
+  border:2px solid var(--pink);
+}
+
+/* PRODUCT GRID*/
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+/* PRODUCT CARD */
+
+.product-card{
+  background:var(--green);
+  overflow:hidden;
+}
+
+/* PRODUCT IMAGE */
+
+.product-image{
+  width:100%;
+  height:520px;
+  background:var(--green);
+}
+
+/* PRODUCT INFO */
+
+.product-info{
+  padding:12px;
+  color:white;
+}
+
+.brand{
+  font-size:12px;
+  font-weight:400;
+  margin-bottom:8px;
+}
+
+.product-title{
+  font-size:14px;
+  font-weight:500;
+  margin-bottom:10px;
+}
+
+.price-wrapper{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
+
+.current-price{
+  font-size:12px;
+  font-weight:600;
+}
+
+.old-price{
+  font-size:12px;
+  text-decoration:line-through;
+  opacity:0.6;
+}
+
+/* TABLET RESPONSIVE */
+
+@media(max-width:992px){
+
+  .products-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero-content h2{
+    font-size:48px;
+  }
+
+  .hero-image{
+    height:420px;
+  }
+
+  .product-image{
+    height:400px;
+  }
+
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+
+  .hero-image{
+    height:300px;
+  }
+
+  .hero-content{
+    padding:22px 18px;
+  }
+
+  .hero-content h2{
+    font-size:42px;
+  }
+
+  .hero-description{
+    font-size:13px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .section-title{
+    font-size:24px;
+  }
+
+  .product-image{
+    height:300px;
+  }
+
+}
+
+/* SMALL MOBILE */
+@media(max-width:576px){
+
+  .products{
+    padding:0 12px 20px;
+  }
+
+  .products-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+  }
+
+  .hero-image{
+    height:220px;
+  }
+
+  .hero-content h2{
+    font-size:32px;
+  }
+
+  .hero-description{
+    line-height:1.5;
+  }
+
+  .product-image{
+    height:220px;
+  }
+
+  .product-info{
+    padding:10px;
+  }
+
+  .product-title{
+    font-size:13px;
+  }
+
+  .current-price{
+    font-size:11px;
+  }
+
+  .old-price{
+    font-size:11px;
+  }
+
+  .section-title{
+    font-size:22px;
+    padding:10px;
+    margin-bottom:20px;
+  }
+
+}
